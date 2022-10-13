@@ -1,3 +1,8 @@
 name = "hello_worker"
 main = "src/index.ts"
 compatibility_date = "2022-10-13"
+
+kv_namespaces = [
+  # idに本番用、preview_idに開発用のKVのnamespaceを設定する
+  { binding = "testKV", id = "9c2edf34c180454fbaa17352be75aecb", preview_id = "9c2edf34c180454fbaa17352be75aecb" }
+]
